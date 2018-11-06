@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['m_5ferror',['m_error',['../classmo_file_reader.html#ae8fb2a5f7a3e3ff76db8d5086a4c8d53',1,'moFileReader']]],
+  ['m_5ffileversion',['m_fileVersion',['../structmo_file_info.html#a8dd7ebb17501b07825a9b1e6004393a6',1,'moFileInfo']]],
+  ['m_5flookup',['m_lookup',['../classmo_file_reader.html#ad96f8b6b950e712c1d46f7f8a14c3d5d',1,'moFileReader']]],
+  ['m_5fmagicnumber',['m_magicNumber',['../structmo_file_info.html#abbb8d5896d0f9129582a3fba0329014a',1,'moFileInfo']]],
+  ['m_5fnumstrings',['m_numStrings',['../structmo_file_info.html#a3420bb85a693fdde167600bd63ac9178',1,'moFileInfo']]],
+  ['m_5foffsethashtable',['m_offsetHashtable',['../structmo_file_info.html#a5aee97508f67928b3e80528d705ce033',1,'moFileInfo']]],
+  ['m_5foffsetoriginal',['m_offsetOriginal',['../structmo_file_info.html#a9e5c83dd02afe21d6e19b75ee00cc5a5',1,'moFileInfo']]],
+  ['m_5foffsettranslation',['m_offsetTranslation',['../structmo_file_info.html#a14b1b62c70f646772a5238ee33864ce4',1,'moFileInfo']]],
+  ['m_5forlength',['m_orLength',['../structmo_translation_pair_information.html#a4d202d507d92a8109076a9f73f2b572a',1,'moTranslationPairInformation']]],
+  ['m_5foroffset',['m_orOffset',['../structmo_translation_pair_information.html#a0c53d1d1897adc0bb23fa6a1fa64c30b',1,'moTranslationPairInformation']]],
+  ['m_5freversed',['m_reversed',['../structmo_file_info.html#aa52855a008414cdbb82702fd7c0e1669',1,'moFileInfo']]],
+  ['m_5fsizehashtable',['m_sizeHashtable',['../structmo_file_info.html#a5fb5ef4cc47e5f229f50285b8603fa88',1,'moFileInfo']]],
+  ['m_5ftranslationpairinformation',['m_translationPairInformation',['../structmo_file_info.html#ad182c32a348f4292f178394a17bfd405',1,'moFileInfo']]],
+  ['m_5ftrlength',['m_trLength',['../structmo_translation_pair_information.html#a7f6bf87fe2210b4740e41d93058e27fd',1,'moTranslationPairInformation']]],
+  ['m_5ftroffset',['m_trOffset',['../structmo_translation_pair_information.html#aed9260051d4fcf5d2bbeb39d647d4cf6',1,'moTranslationPairInformation']]],
+  ['magicnumber',['MagicNumber',['../classmo_file_reader.html#aebccc5b579927cee8672e55bbb300b6c',1,'moFileReader']]],
+  ['magicreversed',['MagicReversed',['../classmo_file_reader.html#a1516c7af9e620a6cf026744d82752c40',1,'moFileReader']]]
+];
