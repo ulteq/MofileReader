@@ -89,15 +89,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="title">moFileReaderSDK </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h2>Compilation with Visual C++ (Express and better)</h2>
-<p>We provide a project for Visual C++ 2008. You can select 3 Types of Compilation:</p>
-<h3>Executable (Release or Debug)</h3>
-<p>This will compile the code as an executable which can lookup strings from every .mo-File you load with it. This can be handy if you want to have a peek into a file or test something etc. I recommend building the release-executable only if you just want to use it.</p>
-<h3>Dynamic Loaded Library ( ReleaseDLL )</h3>
-<p>This may be overkill, but perhaps you like it modular. This Configuration will create a dll and an import-library. Do not forget to link against the import-library and please define MOFILE_IMPORT in your preprocessor-settings, otherwise you will receive a bunch of linker-errors. You will find all files in the directory "lib" in the Solutions Directory.</p>
-<h3>Static Library ( ReleaseLIB )</h3>
-<p>This will compile the code as a static library with no Entry-Point. This is the recommended usage. But please do not forget to link against moFileReader.static.lib. Otherwise you will receive linker-errors.</p>
-<h2>Compilation via cmake</h2>
+<div class="textblock"><h2>Compilation via cmake</h2>
 <ul>
 <li>Make sure you have cmake installed and in your path. If not, go to <a href="http://www.cmake.org">http://www.cmake.org</a> and get it.</li>
 <li>Switch to a Shell or commandline</li>
@@ -107,13 +99,20 @@ $(document).ready(function(){initNavTree('index.html','');});
 Example: <div class="fragment"><div class="line">cmake -G<span class="stringliteral">&quot;MinGW Makefiles&quot;</span> -DCOMPILE_DLL=ON</div><div class="line">cmake -G<span class="stringliteral">&quot;Visual Studio 9 2008&quot;</span></div><div class="line"><span class="comment">// etc</span></div></div><!-- fragment --></li>
 </ul>
 <p>cmake will compile the library and moReader[.exe]-binary, which can do lookups in moFiles and export moFiles as HTML. See moReader[.exe] &ndash;help for details. You will find the libraries in %projectdir%%/lib and the binary in %projectdir%%/bin</p>
-<h2>None of those?</h2>
+<h2>Include in project</h2>
 <p>The last option is to simply add moFileReader.cpp, <a class="el" href="mo_file_reader_8h.html">moFileReader.h</a> and <a class="el" href="mo_file_config_8h.html">moFileConfig.h</a> to your project. Thats all you have to do. You can safely exclude mo.cpp, since this file keeps the entry-points of the .exe and .dll only.</p>
 <h2>Usage</h2>
-<p>This is <a class="el" href="classmo_file_reader.html" title="This class is a gettext-replacement. ">moFileReader</a>, a simple gettext-replacement. The usage of this library is, hopefully, fairly simple: </p><div class="fragment"><div class="line"><span class="comment">// Instanciate the class</span></div><div class="line">moFileLib::moFileReader reader;</div><div class="line"></div><div class="line"><span class="comment">// Load a .mo-File.</span></div><div class="line"><span class="keywordflow">if</span> ( reader.ReadFile(<span class="stringliteral">&quot;myTranslationFile.mo&quot;</span>) != moFileLib::moFileReader::EC_SUCCESS )</div><div class="line">{</div><div class="line">   <span class="comment">// Error Handling</span></div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// Now, you can lookup the strings you stored in the .mo-File:</span></div><div class="line">std::cout &lt;&lt; reader.Lookup(<span class="stringliteral">&quot;MyTranslationString&quot;</span>) &lt;&lt; std::endl;  </div></div><!-- fragment --><p> Thats all! This small code has no dependencies, except the C/C++-runtime of your compiler, so it should work on all machines where a C++-runtime is provided.</p>
+<p>This is <a class="el" href="classmo_file_reader.html" title="This class is a gettext-replacement. ">moFileReader</a>, a simple gettext-replacement. The usage of this library is, hopefully, fairly simple: </p><div class="fragment"><div class="line"><span class="comment">// Instanciate the class</span></div><div class="line">moFileLib::moFileReader reader;</div><div class="line"></div><div class="line"><span class="comment">// Load a .mo-File.</span></div><div class="line"><span class="keywordflow">if</span> ( reader.ReadFile(<span class="stringliteral">&quot;myTranslationFile.mo&quot;</span>) != moFileLib::moFileReader::EC_SUCCESS )</div><div class="line">{</div><div class="line">   <span class="comment">// Error Handling</span></div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// Now, you can lookup the strings you stored in the .mo-File:</span></div><div class="line">std::cout &lt;&lt; reader.Lookup(<span class="stringliteral">&quot;MyTranslationString&quot;</span>) &lt;&lt; std::endl;</div></div><!-- fragment --><p> Thats all! This small code has no dependencies, except the C/C++-runtime of your compiler, so it should work on all machines where a C++-runtime is provided.</p>
 <dl class="section note"><dt>Note</dt><dd>We do not yet support .mo-Files with reversed magic-numbers, since I don't have a file to test it and I hate to release stuff I wasn't able to test.</dd></dl>
 <h2>Changelog</h2>
 <ul>
+<li>Version 1.0.0<ul>
+<li>Added new function: LookupWithContext</li>
+<li>Added unit-tests</li>
+<li>Added support for packaging with Conan</li>
+<li>Moved project to <a href="https://github.com/AnotherFoxGuy/MofileReader">https://github.com/AnotherFoxGuy/MofileReader</a></li>
+</ul>
+</li>
 <li>Version 0.1.2<ul>
 <li>Generic improvements to the documentation.</li>
 <li>Generic improvements to the code</li>
@@ -121,8 +120,8 @@ Example: <div class="fragment"><div class="line">cmake -G<span class="stringlite
 <li>Added -h, &ndash;help and -? to moReader[.exe]. It will print the help-screen.</li>
 <li>Added &ndash;version and -v to moReader[.exe]. It will print some informations about the program.</li>
 <li>Added &ndash;license to moReader[.exe]. This will print its license.</li>
-<li>&ndash;export gives now a feedback about success or failure. <br />
- - The HTML-Dump-Method outputs now the whole table from the empty msgid in a nice html-table, not only a few hardcoded.</li>
+<li>&ndash;export gives now a feedback about success or failure.</li>
+<li>The HTML-Dump-Method outputs now the whole table from the empty msgid in a nice html-table, not only a few hardcoded.</li>
 <li>I had an issue-report that the Error-Constants can collide with foreign code under certain conditions, so I added a patch which renamed the error-constants to more compatible names.</li>
 </ul>
 </li>
@@ -152,7 +151,7 @@ Submit patches and/or bugs on <a href="https://github.com/AnotherFoxGuy/MofileRe
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Dec 13 2018 13:35:48 for MofileReader by
+    <li class="footer">Generated on Thu Dec 13 2018 15:58:42 for MofileReader by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

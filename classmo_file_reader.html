@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('classmo_file_reader.html','');});
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmo_file_reader__inherit__graph.svg" width="183" height="448"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmo_file_reader__inherit__graph.svg" width="183" height="463"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -118,7 +118,7 @@ $(document).ready(function(){initNavTree('classmo_file_reader.html','');});
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmo_file_reader__coll__graph.svg" width="167" height="279"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmo_file_reader__coll__graph.svg" width="167" height="294"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -149,6 +149,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac2a1a518b89104289519b309321575e4"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmo_file_reader.html#ac2a1a518b89104289519b309321575e4">Lookup</a> (const char *id) const</td></tr>
 <tr class="memdesc:ac2a1a518b89104289519b309321575e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the searched translation or returns the input.  <a href="#ac2a1a518b89104289519b309321575e4">More...</a><br /></td></tr>
 <tr class="separator:ac2a1a518b89104289519b309321575e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9459d21908db8ba4e40693b4332777ce"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmo_file_reader.html#a9459d21908db8ba4e40693b4332777ce">LookupWithContext</a> (const char *context, const char *id) const</td></tr>
+<tr class="memdesc:a9459d21908db8ba4e40693b4332777ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the searched translation or returns the input, restricted to the context given by context. See <a href="https://www.gnu.org/software/gettext/manual/html_node/Contexts.html">https://www.gnu.org/software/gettext/manual/html_node/Contexts.html</a> for more info.  <a href="#a9459d21908db8ba4e40693b4332777ce">More...</a><br /></td></tr>
+<tr class="separator:a9459d21908db8ba4e40693b4332777ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29a45556ea2fa440304840da849cfe72"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmo_file_reader.html#a29a45556ea2fa440304840da849cfe72">GetErrorDescription</a> () const</td></tr>
 <tr class="memdesc:a29a45556ea2fa440304840da849cfe72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Error Description.  <a href="#a29a45556ea2fa440304840da849cfe72">More...</a><br /></td></tr>
 <tr class="separator:a29a45556ea2fa440304840da849cfe72"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,7 +217,7 @@ Tell the class which .mo-file it shall load via <a class="el" href="classmo_file
 <dd>
 I strongly recommend poEdit from Vaclav Slavik for editing .po-Files, get it at <a href="http://poedit.net">http://poedit.net</a> for various systems :). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mo_file_reader_8h_source.html#l00301">301</a> of file <a class="el" href="mo_file_reader_8h_source.html">moFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mo_file_reader_8h_source.html#l00285">285</a> of file <a class="el" href="mo_file_reader_8h_source.html">moFileReader.h</a>.</p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ab5382f6394b7f6ed812f6bd6973707cc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab5382f6394b7f6ed812f6bd6973707cc">&#9670;&nbsp;</a></span>moLookupList</h2>
@@ -238,7 +241,7 @@ I strongly recommend poEdit from Vaclav Slavik for editing .po-Files, get it at 
 
 <p>Type for the map which holds the translation-pairs later. </p>
 
-<p class="definition">Definition at line <a class="el" href="mo_file_reader_8h_source.html#l00305">305</a> of file <a class="el" href="mo_file_reader_8h_source.html">moFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mo_file_reader_8h_source.html#l00289">289</a> of file <a class="el" href="mo_file_reader_8h_source.html">moFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -274,14 +277,14 @@ I strongly recommend poEdit from Vaclav Slavik for editing .po-Files, get it at 
 </td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="mo_file_reader_8h_source.html#l00316">316</a> of file <a class="el" href="mo_file_reader_8h_source.html">moFileReader.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    {</div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <a class="code" href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844ad23aa5572ebe813ff02ac7dfe5debddf">EC_SUCCESS</a> = 0,</div><div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <a class="code" href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a05f8a8612e80acf657f19420927f537d">EC_ERROR</a>,</div><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <a class="code" href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a340dfeba68a68dc93b22170550904527">EC_FILENOTFOUND</a>,</div><div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div><div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <a class="code" href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a9716abf0936d8285e8f56ee871191a30">EC_FILEINVALID</a>,</div><div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div><div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <a class="code" href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a5df0131956c6fb1751619b18efeaec30">EC_TABLEEMPTY</a>,</div><div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div><div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <a class="code" href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a5db9a79e4f2ee107153bf7b272446432">EC_MAGICNUMBER_NOMATCH</a>, </div><div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div><div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        <a class="code" href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a66abfe538a12fdb91763d458d4d0cdab">EC_MAGICNUMBER_REVERSED</a>,           </div><div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;    };</div><div class="ttc" id="classmo_file_reader_html_ab3b927e46986be2d0fb6da2af3550844a340dfeba68a68dc93b22170550904527"><div class="ttname"><a href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a340dfeba68a68dc93b22170550904527">moFileReader::EC_FILENOTFOUND</a></div><div class="ttdoc">The given File was not found. </div><div class="ttdef"><b>Definition:</b> <a href="mo_file_reader_8h_source.html#l00325">moFileReader.h:325</a></div></div>
-<div class="ttc" id="classmo_file_reader_html_ab3b927e46986be2d0fb6da2af3550844a5db9a79e4f2ee107153bf7b272446432"><div class="ttname"><a href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a5db9a79e4f2ee107153bf7b272446432">moFileReader::EC_MAGICNUMBER_NOMATCH</a></div><div class="ttdoc">The magic number did not match. </div><div class="ttdef"><b>Definition:</b> <a href="mo_file_reader_8h_source.html#l00334">moFileReader.h:334</a></div></div>
-<div class="ttc" id="classmo_file_reader_html_ab3b927e46986be2d0fb6da2af3550844a5df0131956c6fb1751619b18efeaec30"><div class="ttname"><a href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a5df0131956c6fb1751619b18efeaec30">moFileReader::EC_TABLEEMPTY</a></div><div class="ttdoc">Empty Lookup-Table (returned by ExportAsHTML()) </div><div class="ttdef"><b>Definition:</b> <a href="mo_file_reader_8h_source.html#l00331">moFileReader.h:331</a></div></div>
-<div class="ttc" id="classmo_file_reader_html_ab3b927e46986be2d0fb6da2af3550844a9716abf0936d8285e8f56ee871191a30"><div class="ttname"><a href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a9716abf0936d8285e8f56ee871191a30">moFileReader::EC_FILEINVALID</a></div><div class="ttdoc">The file is invalid. </div><div class="ttdef"><b>Definition:</b> <a href="mo_file_reader_8h_source.html#l00328">moFileReader.h:328</a></div></div>
-<div class="ttc" id="classmo_file_reader_html_ab3b927e46986be2d0fb6da2af3550844ad23aa5572ebe813ff02ac7dfe5debddf"><div class="ttname"><a href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844ad23aa5572ebe813ff02ac7dfe5debddf">moFileReader::EC_SUCCESS</a></div><div class="ttdoc">Indicated success. </div><div class="ttdef"><b>Definition:</b> <a href="mo_file_reader_8h_source.html#l00319">moFileReader.h:319</a></div></div>
-<div class="ttc" id="classmo_file_reader_html_ab3b927e46986be2d0fb6da2af3550844a66abfe538a12fdb91763d458d4d0cdab"><div class="ttname"><a href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a66abfe538a12fdb91763d458d4d0cdab">moFileReader::EC_MAGICNUMBER_REVERSED</a></div><div class="ttdoc">The magic number is reversed. </div><div class="ttdef"><b>Definition:</b> <a href="mo_file_reader_8h_source.html#l00340">moFileReader.h:340</a></div></div>
-<div class="ttc" id="classmo_file_reader_html_ab3b927e46986be2d0fb6da2af3550844a05f8a8612e80acf657f19420927f537d"><div class="ttname"><a href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a05f8a8612e80acf657f19420927f537d">moFileReader::EC_ERROR</a></div><div class="ttdoc">Indicates an error. </div><div class="ttdef"><b>Definition:</b> <a href="mo_file_reader_8h_source.html#l00322">moFileReader.h:322</a></div></div>
+<p class="definition">Definition at line <a class="el" href="mo_file_reader_8h_source.html#l00300">300</a> of file <a class="el" href="mo_file_reader_8h_source.html">moFileReader.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    {</div><div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        <a class="code" href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844ad23aa5572ebe813ff02ac7dfe5debddf">EC_SUCCESS</a> = 0,</div><div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;</div><div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <a class="code" href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a05f8a8612e80acf657f19420927f537d">EC_ERROR</a>,</div><div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div><div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        <a class="code" href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a340dfeba68a68dc93b22170550904527">EC_FILENOTFOUND</a>,</div><div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <a class="code" href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a9716abf0936d8285e8f56ee871191a30">EC_FILEINVALID</a>,</div><div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div><div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;        <a class="code" href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a5df0131956c6fb1751619b18efeaec30">EC_TABLEEMPTY</a>,</div><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <a class="code" href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a5db9a79e4f2ee107153bf7b272446432">EC_MAGICNUMBER_NOMATCH</a>,</div><div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;</div><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <a class="code" href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a66abfe538a12fdb91763d458d4d0cdab">EC_MAGICNUMBER_REVERSED</a>,</div><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    };</div><div class="ttc" id="classmo_file_reader_html_ab3b927e46986be2d0fb6da2af3550844a340dfeba68a68dc93b22170550904527"><div class="ttname"><a href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a340dfeba68a68dc93b22170550904527">moFileReader::EC_FILENOTFOUND</a></div><div class="ttdoc">The given File was not found. </div><div class="ttdef"><b>Definition:</b> <a href="mo_file_reader_8h_source.html#l00309">moFileReader.h:309</a></div></div>
+<div class="ttc" id="classmo_file_reader_html_ab3b927e46986be2d0fb6da2af3550844a5db9a79e4f2ee107153bf7b272446432"><div class="ttname"><a href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a5db9a79e4f2ee107153bf7b272446432">moFileReader::EC_MAGICNUMBER_NOMATCH</a></div><div class="ttdoc">The magic number did not match. </div><div class="ttdef"><b>Definition:</b> <a href="mo_file_reader_8h_source.html#l00318">moFileReader.h:318</a></div></div>
+<div class="ttc" id="classmo_file_reader_html_ab3b927e46986be2d0fb6da2af3550844a5df0131956c6fb1751619b18efeaec30"><div class="ttname"><a href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a5df0131956c6fb1751619b18efeaec30">moFileReader::EC_TABLEEMPTY</a></div><div class="ttdoc">Empty Lookup-Table (returned by ExportAsHTML()) </div><div class="ttdef"><b>Definition:</b> <a href="mo_file_reader_8h_source.html#l00315">moFileReader.h:315</a></div></div>
+<div class="ttc" id="classmo_file_reader_html_ab3b927e46986be2d0fb6da2af3550844a9716abf0936d8285e8f56ee871191a30"><div class="ttname"><a href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a9716abf0936d8285e8f56ee871191a30">moFileReader::EC_FILEINVALID</a></div><div class="ttdoc">The file is invalid. </div><div class="ttdef"><b>Definition:</b> <a href="mo_file_reader_8h_source.html#l00312">moFileReader.h:312</a></div></div>
+<div class="ttc" id="classmo_file_reader_html_ab3b927e46986be2d0fb6da2af3550844ad23aa5572ebe813ff02ac7dfe5debddf"><div class="ttname"><a href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844ad23aa5572ebe813ff02ac7dfe5debddf">moFileReader::EC_SUCCESS</a></div><div class="ttdoc">Indicated success. </div><div class="ttdef"><b>Definition:</b> <a href="mo_file_reader_8h_source.html#l00303">moFileReader.h:303</a></div></div>
+<div class="ttc" id="classmo_file_reader_html_ab3b927e46986be2d0fb6da2af3550844a66abfe538a12fdb91763d458d4d0cdab"><div class="ttname"><a href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a66abfe538a12fdb91763d458d4d0cdab">moFileReader::EC_MAGICNUMBER_REVERSED</a></div><div class="ttdoc">The magic number is reversed. </div><div class="ttdef"><b>Definition:</b> <a href="mo_file_reader_8h_source.html#l00324">moFileReader.h:324</a></div></div>
+<div class="ttc" id="classmo_file_reader_html_ab3b927e46986be2d0fb6da2af3550844a05f8a8612e80acf657f19420927f537d"><div class="ttname"><a href="classmo_file_reader.html#ab3b927e46986be2d0fb6da2af3550844a05f8a8612e80acf657f19420927f537d">moFileReader::EC_ERROR</a></div><div class="ttdoc">Indicates an error. </div><div class="ttdef"><b>Definition:</b> <a href="mo_file_reader_8h_source.html#l00306">moFileReader.h:306</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -490,7 +493,53 @@ I strongly recommend poEdit from Vaclav Slavik for editing .po-Files, get it at 
 <p>Returns the searched translation or returns the input. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">id</td><td>The id of the translation to search for. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>The id of the translation to search for. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The value you passed in via _id or the translated string. </dd></dl>
+
+</div>
+</div>
+<a id="a9459d21908db8ba4e40693b4332777ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9459d21908db8ba4e40693b4332777ce">&#9670;&nbsp;</a></span>LookupWithContext()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string moFileReader::LookupWithContext </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the searched translation or returns the input, restricted to the context given by context. See <a href="https://www.gnu.org/software/gettext/manual/html_node/Contexts.html">https://www.gnu.org/software/gettext/manual/html_node/Contexts.html</a> for more info. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>The id of the translation to search for. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>The id of the translation to search for. </td></tr>
   </table>
   </dd>
 </dl>
@@ -680,7 +729,7 @@ I strongly recommend poEdit from Vaclav Slavik for editing .po-Files, get it at 
 
 <p>Keeps the last error as String. </p>
 
-<p class="definition">Definition at line <a class="el" href="mo_file_reader_8h_source.html#l00392">392</a> of file <a class="el" href="mo_file_reader_8h_source.html">moFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mo_file_reader_8h_source.html#l00385">385</a> of file <a class="el" href="mo_file_reader_8h_source.html">moFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -704,7 +753,7 @@ I strongly recommend poEdit from Vaclav Slavik for editing .po-Files, get it at 
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="mo_file_reader_8h_source.html#l00402">402</a> of file <a class="el" href="mo_file_reader_8h_source.html">moFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mo_file_reader_8h_source.html#l00395">395</a> of file <a class="el" href="mo_file_reader_8h_source.html">moFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -730,7 +779,7 @@ I strongly recommend poEdit from Vaclav Slavik for editing .po-Files, get it at 
 
 <p>The Magic Number describes the endianess of bytes on the system. </p>
 
-<p class="definition">Definition at line <a class="el" href="mo_file_reader_8h_source.html#l00310">310</a> of file <a class="el" href="mo_file_reader_8h_source.html">moFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mo_file_reader_8h_source.html#l00294">294</a> of file <a class="el" href="mo_file_reader_8h_source.html">moFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -756,7 +805,7 @@ I strongly recommend poEdit from Vaclav Slavik for editing .po-Files, get it at 
 
 <p>If the Magic Number is Reversed, we need to swap the bytes. </p>
 
-<p class="definition">Definition at line <a class="el" href="mo_file_reader_8h_source.html#l00313">313</a> of file <a class="el" href="mo_file_reader_8h_source.html">moFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mo_file_reader_8h_source.html#l00297">297</a> of file <a class="el" href="mo_file_reader_8h_source.html">moFileReader.h</a>.</p>
 
 </div>
 </div>
@@ -769,7 +818,7 @@ I strongly recommend poEdit from Vaclav Slavik for editing .po-Files, get it at 
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classmo_file_reader.html">moFileReader</a></li>
-    <li class="footer">Generated on Thu Dec 13 2018 13:35:48 for MofileReader by
+    <li class="footer">Generated on Thu Dec 13 2018 15:58:41 for MofileReader by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

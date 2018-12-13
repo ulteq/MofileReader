@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('classmo_file_reader_singleton.html',''
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmo_file_reader_singleton__inherit__graph.svg" width="183" height="448"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmo_file_reader_singleton__inherit__graph.svg" width="183" height="463"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -111,7 +111,7 @@ $(document).ready(function(){initNavTree('classmo_file_reader_singleton.html',''
 <div id="dynsection-1-summary" class="dynsummary" style="display:block;">
 </div>
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classmo_file_reader_singleton__coll__graph.svg" width="183" height="448"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classmo_file_reader_singleton__coll__graph.svg" width="183" height="463"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -160,6 +160,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ac2a1a518b89104289519b309321575e4 inherit pub_methods_classmo_file_reader"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmo_file_reader.html#ac2a1a518b89104289519b309321575e4">Lookup</a> (const char *id) const</td></tr>
 <tr class="memdesc:ac2a1a518b89104289519b309321575e4 inherit pub_methods_classmo_file_reader"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the searched translation or returns the input.  <a href="classmo_file_reader.html#ac2a1a518b89104289519b309321575e4">More...</a><br /></td></tr>
 <tr class="separator:ac2a1a518b89104289519b309321575e4 inherit pub_methods_classmo_file_reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9459d21908db8ba4e40693b4332777ce inherit pub_methods_classmo_file_reader"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmo_file_reader.html#a9459d21908db8ba4e40693b4332777ce">LookupWithContext</a> (const char *context, const char *id) const</td></tr>
+<tr class="memdesc:a9459d21908db8ba4e40693b4332777ce inherit pub_methods_classmo_file_reader"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the searched translation or returns the input, restricted to the context given by context. See <a href="https://www.gnu.org/software/gettext/manual/html_node/Contexts.html">https://www.gnu.org/software/gettext/manual/html_node/Contexts.html</a> for more info.  <a href="classmo_file_reader.html#a9459d21908db8ba4e40693b4332777ce">More...</a><br /></td></tr>
+<tr class="separator:a9459d21908db8ba4e40693b4332777ce inherit pub_methods_classmo_file_reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29a45556ea2fa440304840da849cfe72 inherit pub_methods_classmo_file_reader"><td class="memItemLeft" align="right" valign="top">virtual const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmo_file_reader.html#a29a45556ea2fa440304840da849cfe72">GetErrorDescription</a> () const</td></tr>
 <tr class="memdesc:a29a45556ea2fa440304840da849cfe72 inherit pub_methods_classmo_file_reader"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the Error Description.  <a href="classmo_file_reader.html#a29a45556ea2fa440304840da849cfe72">More...</a><br /></td></tr>
 <tr class="separator:a29a45556ea2fa440304840da849cfe72 inherit pub_methods_classmo_file_reader"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,13 +198,13 @@ Additional Inherited Members</h2></td></tr>
 <ul>
 <li><a class="el" href="mo_file_reader_8h.html#a346479976f64f96205f5b77452f10369" title="Reads the .mo-File. ">moReadMoFile()</a></li>
 <li><a class="el" href="mo_file_reader_8h.html#ab39015757f4ad339fd19730bb104ab99" title="Looks for the spec. string to translate. ">_()</a></li>
-<li><a class="el" href="mo_file_reader_8h.html#a1ca9fb22b0642e340a9921df3d354cbb" title="Resets the Lookup-Table. ">moFileClearTable()</a> <br />
-- <a class="el" href="mo_file_reader_8h.html#a4a3ae7997bfc384d028036d6c34a68e4" title="Returns the last known error as string or an empty class. ">moFileGetErrorDescription()</a></li>
+<li><a class="el" href="mo_file_reader_8h.html#a1ca9fb22b0642e340a9921df3d354cbb" title="Resets the Lookup-Table. ">moFileClearTable()</a></li>
+<li><a class="el" href="mo_file_reader_8h.html#a4a3ae7997bfc384d028036d6c34a68e4" title="Returns the last known error as string or an empty class. ">moFileGetErrorDescription()</a></li>
 <li><a class="el" href="mo_file_reader_8h.html#afd4a8b37b6005690c2e22ca32592df03" title="Returns the number of entries loaded from the .mo-File. ">moFileGetNumStrings()</a>; </li>
 </ul>
 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="mo_file_reader_8h_source.html#l00422">422</a> of file <a class="el" href="mo_file_reader_8h_source.html">moFileReader.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="mo_file_reader_8h_source.html#l00415">415</a> of file <a class="el" href="mo_file_reader_8h_source.html">moFileReader.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2cdffc5148c1f5ff3d07a498c8ce9d92"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2cdffc5148c1f5ff3d07a498c8ce9d92">&#9670;&nbsp;</a></span>moFileReaderSingleton() <span class="overload">[1/2]</span></h2>
@@ -318,7 +321,7 @@ Additional Inherited Members</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classmo_file_reader_singleton.html">moFileReaderSingleton</a></li>
-    <li class="footer">Generated on Thu Dec 13 2018 13:35:48 for MofileReader by
+    <li class="footer">Generated on Thu Dec 13 2018 15:58:42 for MofileReader by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>

@@ -16,6 +16,7 @@ var classmo_file_reader =
     [ "GetNumStrings", "classmo_file_reader.html#a753c23ac2141e4356d5a0dbb6fecb325", null ],
     [ "GetPoEditorString", "classmo_file_reader.html#a52f609d80a0420ccc8dd116566683e43", null ],
     [ "Lookup", "classmo_file_reader.html#ac2a1a518b89104289519b309321575e4", null ],
+    [ "LookupWithContext", "classmo_file_reader.html#a9459d21908db8ba4e40693b4332777ce", null ],
     [ "MakeHtmlConform", "classmo_file_reader.html#a8bee032532994b86c7a76226e9037aa7", null ],
     [ "ParseData", "classmo_file_reader.html#a7b89b64b0628d068a1581457ecf8754b", null ],
     [ "ReadFile", "classmo_file_reader.html#a678835a34c97016d7b847fd20ef0d7d7", null ],
